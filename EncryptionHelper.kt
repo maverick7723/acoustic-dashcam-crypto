@@ -89,7 +89,7 @@ class EncryptionHelper(private val context: Context) {
     }
 
     /**
-     * RED-04: Secure wrapper for all Keystore operations to prevent app crashes 
+     * RED-04: Secure wrapper for all Keystore operations to prevent app crashes
      * after a Nuclear Wipe or Keystore invalidation.
      */
     fun <T> secureKeystoreAccess(block: () -> T): Result<T> {
